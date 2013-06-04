@@ -239,4 +239,13 @@ class Ad
     {
         return $this->position;
     }
+    /**
+     * To string
+     * 
+     * @return string id
+     */ 
+    public function __toString()
+    {
+        return $this->id;
+    }
 }
