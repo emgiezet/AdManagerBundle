@@ -246,6 +246,6 @@ class Ad
      */ 
     public function __toString()
     {
-        return $this->id;
+        return (string) ($this->id!=null?$this->id:uniqid());
     }
 }
