@@ -35,7 +35,7 @@ class CampaignAdmin extends Admin
             ->end()
                 
             
-            ->with('Ads')
+            ->with('Ads - remember to add images in final size.')
                 ->add('ads', 'sonata_type_collection', array('label' => ' ', 'by_reference' => false, 'required' => false),  array(
                         // http://stackoverflow.com/questions/11501022/sonata-admin-bundle-form-type-sonata-type-collection-custom-template
                         'edit' => 'inline',
