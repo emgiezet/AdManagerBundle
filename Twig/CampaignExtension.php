@@ -84,7 +84,7 @@ class CampaignExtension extends \Twig_Extension implements ContainerAwareInterfa
                     
                     $html .= '<div class="item">';
                     $html .= '<a href="' . $ad->getLink() . '" target="_blank">';
-                    $html .= '<img src="'.$provider->generatePublicUrl($media, 'reference').'" alt="'.$ad->getLink().'" title="doink" >';
+                    $html .= '<img src="'.$provider->generatePublicUrl($media, 'reference').'" alt="'.$ad->getLink().'" title="'.$ad->getTitle().'" >';
                     $html .= '</a>';
                     $html .= '</div>';
                 }
