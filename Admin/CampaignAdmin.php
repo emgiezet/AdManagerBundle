@@ -10,6 +10,15 @@ use Sonata\AdminBundle\Show\ShowMapper;
 
 class CampaignAdmin extends Admin
 {
+    public function isGranted($name, $object = null)
+    {
+        if ('DELETE' == $name) {
+            return false;
+        }
+
+        return parent::isGranted($name, $object);
+    }
+
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper
